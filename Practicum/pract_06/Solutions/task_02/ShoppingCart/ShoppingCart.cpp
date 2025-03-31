@@ -80,6 +80,7 @@ bool ShoppingCart::removeItem(const char* name) {
     }
     std::swap(items[elemIndex], items[currentCount - 1]);
     currentCount--;
+    return true;
 }
 
 int ShoppingCart::getCurrentCount() const {
