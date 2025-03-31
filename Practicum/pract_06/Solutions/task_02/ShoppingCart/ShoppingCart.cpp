@@ -63,7 +63,7 @@ ShoppingCart::~ShoppingCart() {
 }
 
 bool ShoppingCart::addItem(const Item& toAdd) {
-    if (find(toAdd.getName()) == -1) {
+    if (find(toAdd.getName()) != -1) {
         return false;
     }
     if (currentCount == capacity) {
